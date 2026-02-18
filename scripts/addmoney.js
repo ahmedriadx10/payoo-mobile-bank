@@ -31,24 +31,18 @@ addMoneyButton.addEventListener("click", function () {
     transactionDiv.innerHTML=`
     <div class="card bg-base-100 w-[90%] mx-auto shadow-sm">
   <div class="card-body">
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary btn-outline btn-square btn-sm">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
+    <div class="card-actions">
+    <div class="badge badge-success">
+  <svg class="size-[1em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor" stroke-linejoin="miter" stroke-linecap="butt"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></circle><polyline points="7 13 10 16 17 8" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></polyline></g></svg>
+  Completed
+</div>
+  
     </div>
-    <p>Add money ${userAddMoneyAmount} successfull from ${selectElementValue} at ${new Date().toDateString()}</p>
-  </div>
+    <p class='mt-3'>Add money ${userAddMoneyAmount} successfull from ${selectElementValue} at ${new Date().toDateString()}</p>
+ <div class='flex justify-end'>   <button class="remove_btn btn btn-primary btn-outline  btn-sm">
+   Remove
+      </button></div>
+    </div>
 </div>
     `
 getTransactionsParent.prepend(transactionDiv)

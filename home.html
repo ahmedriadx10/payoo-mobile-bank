@@ -82,31 +82,51 @@
         <!-- home page buttons area -->
 
         <section id="home-buttons" class="grid grid-cols-3 gap-4">
-          <button class="btn flex-col rounded-xl py-10 btn-primary btn-outline" onclick="displayMagic('add-money-section')">
-            <img src="./assets/opt-1.png" alt=""/><span class=""
+          <button
+            class="btn flex-col rounded-xl py-10 px-0"
+            onclick="displayMagic('add-money-section')"
+          >
+            <img src="./assets/opt-1.png" alt="" class="img-btn"/><span class="btn-color"
               >Add Money</span
             >
           </button>
-          <button class="btn flex-col rounded-xl py-10 btn-primary btn-outline" onclick="displayMagic('cash-out-section')">
-            <img src="./assets/opt-2.png" alt="" /><span class="">Cashout</span>
+          <button
+            class="btn flex-col rounded-xl py-10 px-0"
+            onclick="displayMagic('cash-out-section')"
+          >
+            <img src="./assets/opt-2.png" alt="" class="img-btn" /><span class="btn-color"
+              >Cashout</span
+            >
           </button>
-          <button class="btn flex-col rounded-xl py-10 btn-primary btn-outline" onclick="displayMagic('transfer-balance')">
-            <img src="./assets/opt-3.png" alt="" /><span class=""
+          <button
+            class="btn flex-col rounded-xl py-10 px-0"
+            onclick="displayMagic('transfer-balance')"
+          >
+            <img src="./assets/opt-3.png" alt="" class="img-btn" /><span class="btn-color"
               >Transfer Money</span
             >
           </button>
-          <button class="btn flex-col rounded-xl py-10 btn-primary btn-outline" onclick="displayMagic('bonus-section')">
-            <img src="./assets/opt-4.png" alt="" /><span class=""
+          <button
+            class="btn flex-col rounded-xl py-10 px-0"
+            onclick="displayMagic('bonus-section')"
+          >
+            <img src="./assets/opt-4.png" alt="" class="img-btn"/><span class="btn-color"
               >Get Bonus</span
             >
           </button>
-          <button class="btn flex-col rounded-xl py-10 btn-primary btn-outline" onclick="displayMagic('pay-bill-section')">
-            <img src="./assets/opt-5.png" alt="" /><span class=""
+          <button
+            class="btn flex-col rounded-xl py-10 px-0"
+            onclick="displayMagic('pay-bill-section')"
+          >
+            <img src="./assets/opt-5.png" alt="" class="img-btn"/><span class="btn-color"
               >Pay Bill</span
             >
           </button>
-          <button class="btn flex-col rounded-xl py-10 btn-primary btn-outline" onclick="displayMagic()">
-            <img src="./assets/opt-6.png" alt="" /><span class=""
+          <button
+            class="btn flex-col rounded-xl py-10 px-0"
+            onclick="displayMagic('transaction-area')"
+          >
+            <img src="./assets/opt-6.png" alt="" class="img-btn"/><span class="btn-color"
               >Transactions</span
             >
           </button>
@@ -387,11 +407,17 @@
       </div>
     </section>
 
-    <!-- trnsactions history
+    <!-- trnsactions history -->
 
-<section class="display_hidden w-[90%] mx-auto py-4" id="transaction-area">
-  <h2 class="text-[20px] font-semibold text-neutral/90">Trnsactions</h2>
-</section> -->
+<section class="display_hidden w-[90%] mx-auto py-4 hidden" id="transaction-area">
+  <h2 class="text-[20px] font-semibold text-neutral/90">Transactions</h2>
+
+<!-- transactions container -->
+ <section id="transactions-container" class="space-y-5 ">
+
+ </section>
+
+</section>
 
     <script src="./scripts/helper.js"></script>
     <script src="./scripts/interactive-display.js"></script>

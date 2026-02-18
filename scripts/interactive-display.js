@@ -20,7 +20,10 @@ buttonParentGet.addEventListener("click", function (event) {
     button.classList.remove("btn-primary", "btn-outline");
   }
 
-  if (event.target.classList.contains("btn-color") || event.target.classList.contains('img-btn')) {
+  if (
+    event.target.classList.contains("btn-color") ||
+    event.target.classList.contains("img-btn")
+  ) {
     event.target.parentNode.classList.add("btn-primary", "btn-outline");
   }
 });

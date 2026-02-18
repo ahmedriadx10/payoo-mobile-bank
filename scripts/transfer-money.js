@@ -33,10 +33,10 @@ sendMoneyButton.addEventListener("click", function () {
       `Send money ${userSendMoneyAmount} sucessfull to ${getUserAccountNumber} at ${new Date().toDateString()}`,
     );
 
-        const getTransactionsParent=selectElement('transactions-container')
-    const transactionDiv=document.createElement('div')
+    const getTransactionsParent = selectElement("transactions-container");
+    const transactionDiv = document.createElement("div");
 
-    transactionDiv.innerHTML=`
+    transactionDiv.innerHTML = `
  <div class="card bg-base-100 w-[90%] mx-auto shadow-sm">
   <div class="card-body">
     <div class="card-actions">
@@ -52,7 +52,7 @@ sendMoneyButton.addEventListener("click", function () {
       </button></div>
     </div>
 </div>
-    `
-getTransactionsParent.prepend(transactionDiv)
+    `;
+    getTransactionsParent.prepend(transactionDiv);
   }
 });

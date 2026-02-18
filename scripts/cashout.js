@@ -34,11 +34,11 @@ withdrawButton.addEventListener("click", function () {
     );
     setBalance(calcWithdraw);
     userWithdrawInputField.classList.remove("text-error", "border-error");
-     userWithdrawInputField.value=''
-         const getTransactionsParent=selectElement('transactions-container')
-    const transactionDiv=document.createElement('div')
+    userWithdrawInputField.value = "";
+    const getTransactionsParent = selectElement("transactions-container");
+    const transactionDiv = document.createElement("div");
 
-    transactionDiv.innerHTML=`
+    transactionDiv.innerHTML = `
  <div class="card bg-base-100 w-[90%] mx-auto shadow-sm">
   <div class="card-body">
     <div class="card-actions">
@@ -54,7 +54,7 @@ withdrawButton.addEventListener("click", function () {
       </button></div>
     </div>
 </div>
-    `
-getTransactionsParent.prepend(transactionDiv)
+    `;
+    getTransactionsParent.prepend(transactionDiv);
   }
 });
